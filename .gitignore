@@ -1,0 +1,5 @@
+# IDE and editors
+.settings
+.classpath
+.project
+bin
