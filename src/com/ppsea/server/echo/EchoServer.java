@@ -15,7 +15,6 @@ public class EchoServer {
 	public static void main(String[] args) throws Exception {
 		ChannelFactory factory = new NioServerSocketChannelFactory(Executors.newCachedThreadPool(), Executors.newCachedThreadPool());
 		ServerBootstrap bootstrap = new ServerBootstrap(factory);
-
 		bootstrap.setPipelineFactory(new ChannelPipelineFactory() {
 			public ChannelPipeline getPipeline() {
 				return Channels.pipeline(new EchoServerHandler());
