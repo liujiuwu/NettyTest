@@ -7,7 +7,6 @@ import org.jboss.netty.channel.ChannelHandlerContext;
 import org.jboss.netty.channel.ExceptionEvent;
 import org.jboss.netty.channel.MessageEvent;
 import org.jboss.netty.channel.SimpleChannelHandler;
-import static org.jboss.netty.buffer.ChannelBuffers.*;
 
 public class TimeClientHandler extends SimpleChannelHandler {
 	//private final ChannelBuffer buf = dynamicBuffer();
