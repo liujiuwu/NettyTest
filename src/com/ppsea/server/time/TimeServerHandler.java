@@ -15,7 +15,7 @@ public class TimeServerHandler extends SimpleChannelHandler {
 	public void channelConnected(ChannelHandlerContext ctx, ChannelStateEvent e) {
 		Channel ch = e.getChannel();
 		ChannelBuffer time = ChannelBuffers.buffer(4);
-		time.writeInt((int)(System.currentTimeMillis() / 1000));
+		time.writeInt((int) (System.currentTimeMillis() / 1000));
 		ChannelFuture f = ch.write(time);
 		f.addListener(new ChannelFutureListener() {
 			public void operationComplete(ChannelFuture future) {
