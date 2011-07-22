@@ -13,6 +13,11 @@ import org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory;
 
 public class TimeClient {
 
+	/**
+	 * 客户端
+	 * @param args
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception {
 		String host = "127.0.0.1";
 		int port = 8080;
