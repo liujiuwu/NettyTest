@@ -23,6 +23,7 @@ public class TimeServerHandler extends SimpleChannelHandler {
 				ch.close();
 			}
 		});
+		
 		System.out.println(ch.isConnected());
 	}
 
