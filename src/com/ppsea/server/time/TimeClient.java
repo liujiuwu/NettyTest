@@ -29,6 +29,8 @@ public class TimeClient {
 				return Channels.pipeline(new TimeClientHandler());
 			}
 		});
+		
+		
 
 		bootstrap.setOption("tcpNoDelay", true);
 		bootstrap.setOption("keepAlive", true);
