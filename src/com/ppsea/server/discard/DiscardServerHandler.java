@@ -8,6 +8,7 @@ import org.jboss.netty.channel.MessageEvent;
 import org.jboss.netty.channel.SimpleChannelHandler;
 
 public class DiscardServerHandler extends SimpleChannelHandler {
+
 	@Override
 	public void messageReceived(ChannelHandlerContext ctx, MessageEvent e) {
 		ChannelBuffer buf = (ChannelBuffer) e.getMessage();
