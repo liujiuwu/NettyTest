@@ -26,6 +26,7 @@ public class TimeServerHandler extends SimpleChannelHandler {
 		System.out.println(ch.isConnected());
 	}
 
+	
 	@Override
 	public void exceptionCaught(ChannelHandlerContext ctx, ExceptionEvent e) {
 		e.getCause().printStackTrace();
