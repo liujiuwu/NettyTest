@@ -22,6 +22,7 @@ public class TimeClient {
 		String host = "127.0.0.1";
 		int port = 8080;
 
+		
 		ChannelFactory factory = new NioClientSocketChannelFactory(Executors.newCachedThreadPool(), Executors.newCachedThreadPool());
 		ClientBootstrap bootstrap = new ClientBootstrap(factory);
 		bootstrap.setPipelineFactory(new ChannelPipelineFactory() {
